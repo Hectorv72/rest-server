@@ -13,6 +13,10 @@ const UserSchema = new Schema({
     type: Boolean,
     default: false,
   },
+  active: {
+    type: Boolean,
+    default: true,
+  }
 });
 
-module.exports = model("Notes", UserSchema);
+module.exports = model("Note", UserSchema);

@@ -5,15 +5,15 @@ const {
  } = require('../controllers/user.controllers');
 
 //  Ruta que devuelve todos los usuarios
-router.get('/', rutaGet)
+router.get('/note', rutaGet)
 
-router.post('/', rutaPost)
+router.post('/note', rutaPost)
 
 // Actualizar usuarios
-router.put('/', rutaPut)
+router.put('/note', rutaPut)
 
-router.put('/deleteuser', deleteUser)
+router.put('/deletenote', deleteUser)
 
-router.delete('/', rutaDelete)
+router.delete('/note', rutaDelete)
 
 module.exports = router;
